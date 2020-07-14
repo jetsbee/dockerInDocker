@@ -33,7 +33,7 @@ ENV JAVA_HOME=/opt/java/openjdk
 ENV PATH="$JAVA_HOME/bin:${PATH}"
 # others
 RUN apk add yarn
-RUN apk add build-base libffi-dev openssl-dev python3 python3-dev
+RUN apk add build-base libffi-dev openssl-dev python3 python3-dev py3-pip
 RUN python3 -m pip install --upgrade pip
 RUN apk add zsh
 RUN apk add vim
